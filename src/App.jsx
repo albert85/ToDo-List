@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import AddTodo from './components/AddTodo';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
             Testing
           </button>
         </p>
+        <AddTodo />
       </div>
     );
   }
