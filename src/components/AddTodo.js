@@ -33,7 +33,7 @@ class AddTodo extends Component {
                  onChange={this.onChange} 
                  placeholder="Add task" 
           />
-          <button>Add New Task</button>
+          <button>Add New Task.</button>
         </form>
         <ListTodo items={this.state.items} />
       </div>
