@@ -1,7 +1,7 @@
 import React from "react";
 const Navbar = () => (
   <nav className="navbar navbar-dark bg-dark">
-    <a className="navbar-brand" href="#">
+    <a className="navbar-brand" href="/">
       TodoList
     </a>
     <div className="col-4">
