@@ -1,5 +1,4 @@
-
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import "./App.css";
 import Navbar from "./components/navbar";
 import AddTodo from "./components/AddTodo";
