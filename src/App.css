@@ -21,3 +21,8 @@
 span > i {
   font-size: 1.5em !important;
 }
+
+.task_list{
+  width: 75%;
+  margin: auto;
+}
