@@ -10,7 +10,7 @@ const Signin = () => (
             <strong> Sign in to continue</strong>
           </div>
           <div className="card-body">
-            <form role="form" action="#" method="POST">
+            <form>
               <div className="row">
                 <div className="col-sm-12 col-md-10">
                   <div className="input-group mt-4 mb-3">
@@ -22,7 +22,7 @@ const Signin = () => (
                     <input
                       className="form-control"
                       placeholder="Username"
-                      name="loginname"
+                      name="login name"
                       type="text"
                       autofocus
                     />
@@ -61,4 +61,5 @@ const Signin = () => (
     </div>
   </div>
 );
+
 export default Signin;

@@ -3,18 +3,14 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => (
   <nav className="navbar navbar-dark bg-dark">
-    <span className="navbar-brand">
+    <Link to="/index" className="navbar-brand">
+      &nbsp; TodoList
+    </Link>
+    <span className="navbar-brand mr-auto mt-2">
       <i className="fa fa-tasks" />
     </span>
-    <ul className="navbar-nav mr-auto">
-      <li className="nav-item">
-        <Link className="nav-link" to="/index">
-          TodoList
-        </Link>
-      </li>
-    </ul>
     <div className="col-4">
-      <form className="form-inline my-2, my-md-0">
+      <form className="form-inline">
         <input
           className="form-control rounded"
           type="text"

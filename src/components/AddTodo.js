@@ -1,41 +1,24 @@
-import React, { Component } from 'react';
-import ListTodo from './ListTodo.js';
-import '../App.css';
+import React, { PureComponent } from "react";
+import "../App.css";
 
-class AddTodo extends Component {
-
-    constructor(props) {
-    super(props);
-    this.state = {
-      term: '',
-      items: []
-    };
-  }
-
-  onChange = (event) => {
-    event.preventDefault();
-    this.setState({ term: event.target.value });
-  }
-
-  onSubmit = (event) => {
-    event.preventDefault();
-    this.setState({
-      term: '',
-      items: [...this.state.items, this.state.term]
-    });
-  }
-
+class AddTodo extends PureComponent {
   render() {
     return (
       <div>
         <form className="App" onSubmit={this.onSubmit}>
-          <input value={this.state.term} 
-                 onChange={this.onChange} 
-                 placeholder="Add task" 
-          />
-          <button>Add New Task.</button>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control rounded"
+              placeholder="Add Task"
+            />
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button">
+                Add Task
+              </button>
+            </div>
+          </div>
         </form>
-        <ListTodo items={this.state.items} />
       </div>
     );
   }
