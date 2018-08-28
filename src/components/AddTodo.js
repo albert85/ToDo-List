@@ -1,14 +1,23 @@
-import React, { PureComponent } from 'react';
-import '../App.css';
+import React, { PureComponent } from "react";
+import "../App.css";
 
-class AddTodo extends PureComponent {  
-
+class AddTodo extends PureComponent {
   render() {
     return (
       <div>
         <form className="App" onSubmit={this.onSubmit}>
-          <input placeholder="Add task" />
-          <button>Add New Task.</button>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control rounded"
+              placeholder="Add Task"
+            />
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button">
+                Add Task
+              </button>
+            </div>
+          </div>
         </form>
       </div>
     );

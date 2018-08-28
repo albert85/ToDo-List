@@ -9,12 +9,11 @@ const Main = () => (
       </div>
       <div className="mt-4 col-sm-6">
         <div className="task_list box-shadow rounded">
-          <div class="inner rounded">
-            <div className="text-white pl-4">
+          <div className="inner rounded">
+            <div className="text-white p-3">
               <span>
-                <i class="fa fa-tasks" />
+                <i className="fa fa-tasks"> &nbsp;Tasks</i>
               </span>
-              <h3>Tasks</h3>
             </div>
           </div>
         </div>
